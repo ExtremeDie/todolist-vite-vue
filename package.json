@@ -1,5 +1,5 @@
 {
-  "name": "vitesome",
+  "name": "todolist-vite-vue",
   "version": "1.0.0",
   "description": "A simple opinionated Vue3 Starter Template with Vite.js",
   "scripts": {

@@ -58,11 +58,9 @@
                       type="button"
                       style="transition: all 0.15s ease 0s"
                     >
-                      <img
-                        alt="..."
-                        class="w-5 mr-1"
-                        :src="gitHub"
-                      />Github</button
+                      <!-- <img alt="..." class="w-5 mr-1" :src="GitHub" /> -->
+                      <GitHub />
+                      Github</button
                     ><button
                       class="
                         bg-white
@@ -87,7 +85,9 @@
                       type="button"
                       style="transition: all 0.15s ease 0s"
                     >
-                      <img alt="..." class="w-5 mr-1" :src="google" />Google
+                      <!-- <img alt="..." class="w-5 mr-1" :src="Google" /> -->
+                      <Google width="20" height="20" />
+                      Google
                     </button>
                   </div>
                   <hr class="mt-6 border-b-1 border-gray-400" />
@@ -226,23 +226,28 @@
     </main>
   </div>
 </template>
+
+<script lang="ts" setup>
+// import GitHub from '/@/assets/img/github.svg';
+</script>
+
 <script lang="ts">
-import NavbarComponent from '../components/Navbar.vue';
-import FooterComponent from '../components/Footer.vue';
-import background from '../assets/img/register_bg_2.png';
-import gitHub from '../assets/img/github.svg';
-import google from '../assets/img/google.svg';
+import GitHub from '/@/assets/img/github.svg';
+import Google from '/@/assets/img/google.svg';
+import background from '/@/assets/img/register_bg_2.png';
+import FooterComponent from '/@/components/Footer.vue';
+import NavbarComponent from '/@/components/Navbar.vue';
 export default {
   name: 'login-page',
   components: {
     NavbarComponent,
     FooterComponent,
+    GitHub,
+    Google,
   },
   data() {
     return {
       background,
-      gitHub,
-      google,
     };
   },
 };

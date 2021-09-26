@@ -240,6 +240,7 @@ import background from '/@/assets/img/register_bg_2.png';
 import FooterComponent from '../components/Login/Footer.vue';
 import NavbarComponent from '../components/Login/Navbar.vue';
 import { defineComponent } from 'vue';
+import axios from 'axios';
 export default defineComponent({
   name: 'login-page',
   components: {
@@ -256,13 +257,22 @@ export default defineComponent({
   methods: {
     login() {
       console.log('login');
+      console.log(this.$http.defaults.baseURL);
+
+      // const api = axios.create({
+      //   baseURL: `http://api.pearson.com/v2/dictionaries`,
+      //   withCredentials: false,
+      //   headers: {
+      //     Accept: 'application/json',
+      //     'Content-Type': 'application/json',
+      //   },
+      // });
+      // console.log(api.get('test'));
+      // console.log(this.$store);
     },
   },
   computed: {
     test() {
-      console.log('login');
-      console.log('login', this.$http.get('/test'));
-      console.log('login', this.$store);
       return '';
     },
   },

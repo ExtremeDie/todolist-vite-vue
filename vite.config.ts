@@ -12,10 +12,6 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   server: {
     port: 4000,
-    fs: {
-      // Allow serving files from one level up to the project root
-      allow: ['..'],
-    },
   },
   resolve: {
     alias: {

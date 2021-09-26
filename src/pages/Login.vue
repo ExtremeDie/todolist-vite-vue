@@ -27,7 +27,7 @@
                   border-0
                 "
               >
-                <div class="rounded-t mb-0 px-6 py-6">
+                <!-- <div class="rounded-t mb-0 px-6 py-6">
                   <div class="text-center mb-3">
                     <h6 class="text-gray-600 text-sm font-bold">
                       Sign in with
@@ -58,7 +58,7 @@
                       type="button"
                       style="transition: all 0.15s ease 0s"
                     >
-                      <!-- <img alt="..." class="w-5 mr-1" :src="GitHub" /> -->
+                      <img alt="..." class="w-5 mr-1" :src="GitHub" />
                       <GitHub />
                       Github</button
                     ><button
@@ -85,16 +85,17 @@
                       type="button"
                       style="transition: all 0.15s ease 0s"
                     >
-                      <!-- <img alt="..." class="w-5 mr-1" :src="Google" /> -->
+                      <img alt="..." class="w-5 mr-1" :src="Google" />
                       <Google width="20" height="20" />
                       Google
                     </button>
                   </div>
                   <hr class="mt-6 border-b-1 border-gray-400" />
-                </div>
+                </div> -->
                 <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-                  <div class="text-gray-500 text-center mb-3 font-bold">
-                    <small>Or sign in with credentials</small>
+                  <div class="text-gray-500 text-center mb-3 font-bold pt-5">
+                    <!-- <small>Or sign in with credentials</small> -->
+                    <big>Sign In</big>
                   </div>
                   <form>
                     <div class="relative w-full mb-3">
@@ -235,8 +236,8 @@
 import GitHub from '/@/assets/img/github.svg';
 import Google from '/@/assets/img/google.svg';
 import background from '/@/assets/img/register_bg_2.png';
-import FooterComponent from '/@/components/Footer.vue';
-import NavbarComponent from '/@/components/Navbar.vue';
+import FooterComponent from '../components/Login/Footer.vue';
+import NavbarComponent from '../components/Login/Navbar.vue';
 export default {
   name: 'login-page',
   components: {

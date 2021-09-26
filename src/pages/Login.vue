@@ -95,7 +95,7 @@
                 <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
                   <div class="text-gray-500 text-center mb-3 font-bold pt-5">
                     <!-- <small>Or sign in with credentials</small> -->
-                    <big>Sign In</big>
+                    <h1>Sign In</h1>
                   </div>
                   <form>
                     <div class="relative w-full mb-3">
@@ -200,6 +200,7 @@
                         "
                         type="button"
                         style="transition: all 0.15s ease 0s"
+                        @click="login"
                       >
                         Sign In
                       </button>
@@ -238,7 +239,8 @@ import Google from '/@/assets/img/google.svg';
 import background from '/@/assets/img/register_bg_2.png';
 import FooterComponent from '../components/Login/Footer.vue';
 import NavbarComponent from '../components/Login/Navbar.vue';
-export default {
+import { defineComponent } from 'vue';
+export default defineComponent({
   name: 'login-page',
   components: {
     NavbarComponent,
@@ -251,5 +253,18 @@ export default {
       background,
     };
   },
-};
+  methods: {
+    login() {
+      console.log('login');
+    },
+  },
+  computed: {
+    test() {
+      console.log('login');
+      console.log('login', this.$http.get('/test'));
+      console.log('login', this.$store);
+      return '';
+    },
+  },
+});
 </script>

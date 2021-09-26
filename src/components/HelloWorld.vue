@@ -12,7 +12,7 @@ export default defineComponent({
   },
   setup: () => {
     const { t } = useI18n();
-    
+
     return { t };
   },
 });
@@ -22,7 +22,7 @@ export default defineComponent({
     <h1 class="font-serif font-bold font-bold text-4xl mb-8">{{ msg }}</h1>
 
     <p>
-      {{t('recomended-ide')}}
+      {{ t('recomended-ide') }}
       <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
       +
       <a
@@ -33,11 +33,10 @@ export default defineComponent({
       </a>
       or
       <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-      ({{t('if-using')}}
-      <code>&lt;script setup&gt;</code>)
+      ({{ t('if-using') }} <code>&lt;script setup&gt;</code>)
     </p>
 
-    <p>{{t('See')}} <code>README.md</code> {{t('more-info')}}</p>
+    <p>{{ t('See') }} <code>README.md</code> {{ t('more-info') }}</p>
     <p class="mb-10">
       <a href="https://vitejs.dev/guide/features.html" target="_blank">
         Vite Docs
